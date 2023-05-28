@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HG Fitness</title>
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@1,500&family=Lato:wght@300&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            display: inline-block;
+            margin: 0px;
+            padding: 0px;
+            background: url("img/bg.PNG");
+            background-repeat: no-repeat;
+            background-size: 1400px 1000px;
+            height: 990px;
+
+        }
+
+        .left {
+            position: absolute;
+            background-color: #e5e5e5;
+            top: 15px;
+            left: 33px;
+        }
+
+        .right {
+            position: absolute;
+            top: 15px;
+            right: 10px;
+
+
+        }
+
+        .mid {
+            position: absolute;
+            position: fixed;
+            margin-left: 360px;
+            top: 15px;
+            border: 2px solid darkblue;
+            background-color: #96a6e9;
+            border-radius: 30px;
+            padding-right: 10px;
+            text-align: left;
+        }
+
+        .navbar a {
+            position: relative;
+            color: gold;
+            text-decoration: none;
+            border: 2px solid #535353;
+            border-radius: 8px;
+            padding: 5px;
+            margin: auto 12px;
+            right: 9px
+        }
+
+        .navbar {
+            list-style: none;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 16px;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-weight: bold;
+
+        }
+
+        .navbar a:hover {
+            color: rgb(255, 251, 0);
+            background-color: rgb(179, 176, 176);
+            text-decoration: underline;
+            text-decoration-color: rgb(0, 0, 0);
+        }
+
+        .navbar a:active {
+            color: chocolate;
+            text-decoration: underline;
+        }
+
+        .left img {
+            position: relative;
+            width: 52px;
+            height: 45px;
+
+        }
+
+        div {
+            position: relative;
+            color: black;
+            ;
+            text-align: center;
+            font-weight: bolder;
+            font-size: 10px;
+            font-family: 'Lato', sans-serif;
+        }
+
+        .btn {
+            position: relative;
+            cursor: pointer;
+            color: blue;
+            font-size: 14px;
+            border: 2px solid #535353;
+            font-family: 'Times New Roman', serif;
+            border-radius: 10px;
+            padding: 6px;
+            margin: auto 7px;
+            background-color: #00ff84;
+        }
+
+        .btn:hover {
+            background-color: #e4e5d4;
+        }
+
+        .btn:active {
+            color: #ff2b2b;
+        }
+
+        .container {
+            font-size: larger;
+            border: 2px solid rgb(245, 192, 179);
+            margin: 230px 60px;
+            width: 75%;
+            height: 49%;
+            padding: 2px;
+            border-radius: 4px;
+        }
+
+        .formgroup input {
+            margin: 7px 10px;
+            padding: 19px;
+            font-size: large;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: bisque;
+            text-align: center;
+            width: 162px;
+            height: 2px;
+            border: 3px solid #ff7300;
+            border-radius: 14px;
+        }
+
+        #bt {
+            margin-left: 8px;
+            border: 3px solid #ff7300;
+            width: 205px;
+            color: gold;
+            background-color: black;
+            margin-top: 6px;
+        }
+
+        #bt:hover {
+            background-color: gray;
+        }
+
+        #bt:active {
+            color: #ff2b2b;
+        }
+
+        h3 {
+            font-weight: bolder;
+            color: antiquewhite;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="right">
+            <button class="btn">Call Us</button>
+            <button class="btn">Email Us</button>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Fitness calculator</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+        <div class="left">
+            <img src="img/logo1.PNG" alt="">
+            <div>
+                HG FITNESS
+            </div>
+        </div>
+
+    </header>
+    <div class="container">
+        <h3>Join HG gym for free </h1>
+            <form action="noaction.php">
+                <div class="formgroup">
+                    <input type="text" placeholder="Enter your Name">
+                </div>
+                <div class="formgroup">
+                    <input type="text" placeholder="Enter your Age">
+                </div>
+                <div class="formgroup">
+                    <input type="text" placeholder="Enter your Gender">
+                </div>
+                <div class="formgroup">
+                    <input type="text" placeholder="Enter your Locality">
+                </div>
+                <div class="formgroup">
+                    <input type="text" placeholder="Enter your Email">
+                </div>
+                <div class="formgroup">
+                    <input type="text" placeholder="Enter your Phone number">
+                </div>
+            </form>
+            <button class="btn" id="bt">
+                SUBMIT
+            </button>
+    </div>
+    </div>
+</body>
+
+</html>
